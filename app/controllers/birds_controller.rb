@@ -29,6 +29,7 @@ class BirdsController < ApplicationController
       render json: bird
     else
       render json: {error: "Bird not dound"}, status: :not_found
+    end
   end
 
   private
